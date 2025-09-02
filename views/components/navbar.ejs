@@ -1,0 +1,23 @@
+<nav>
+<% 
+	if (isLoggedIn)
+	{
+		%>
+			<div class="modal"><img class="modal_img" src="img/profile.png">
+			<div class="userTitle"><%=username%></div>
+			<div class="logoutBtn">Logout</div>
+			</div>
+
+		<%
+	}
+	else
+	{
+	%>
+		<a class='login' href='/login'>Login</a>
+		<a class='registerBtn' href='/register'>
+			Register
+		</a>
+	<%
+	}
+	%>	
+</nav>
